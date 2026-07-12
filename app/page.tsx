@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export default function Home() {
   const [step, setStep] = useState('home');
-  const [aiResult, setAiResult] = useState([]);
+  const [aiResult, setAiResult] = useState<any[]>([]);
   const [errorMsg, setErrorMsg] = useState('');
 
   const handleGenerate = async () => {
