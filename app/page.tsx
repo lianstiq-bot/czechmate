@@ -22,10 +22,11 @@ export default function Home() {
       setAiResult(data.itinerary);
       setStep('result');
     } catch (error) {
-      console.error('AI 호출 중 에러 발생:', error);
-      setErrorMsg(error.message);
-      alert(`앗! AI가 일정을 짜는 중 문제가 생겼습니다.\n\n사유: ${error.message}`);
-      setStep('setup');
+  console.error('AI 호출 중 에러 발생:', error);
+  const message = error instanceof Error ? error.message : '알 수 없는 오류가 발생했습니다.';
+  setErrorMsg(message);
+  alert(`앗! AI가 일정을 짜는 중 문제가 생겼습니다.\n\n사유: ${message}`);
+  setStep('setup');;
     }
   };
 
