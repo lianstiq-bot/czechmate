@@ -53,7 +53,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/60"></div>
           <div className="relative z-10 text-center px-4">
             <h1 className="text-7xl font-extrabold text-white drop-shadow-2xl mb-4">Prague Master</h1>
-            <p className="text-2xl text-gray-200 drop-shadow-md mb-12">프라하를 10번 다녀온 전문가가 설계하는 완벽한 체코 여행</p>
+            <p className="text-2xl text-gray-200 drop-shadow-md mb-12">체코를 가장 잘 여행하는 완벽한 방법</p>
             <button onClick={() => setStep('setup')} className="rounded-full bg-blue-600 px-12 py-5 text-white text-2xl font-bold hover:bg-blue-700 transition-all shadow-2xl hover:scale-105">
               내 일정 만들기
             </button>

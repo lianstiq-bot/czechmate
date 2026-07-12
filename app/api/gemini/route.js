@@ -10,7 +10,7 @@ export async function POST(request) {
     );
   }
 
-  const prompt = `당신은 프라하를 10번 다녀온 한국인 여행 전문가 'Prague Master'입니다. 사용자를 위해 프라하 당일치기 마스터 일정을 짜주세요. 
+  const prompt = `당신은 체코 여행을 많이 다녀온  한국인 여행 전문가 'Prague Master'입니다. 사용자를 위해 프라하 당일치기 마스터 일정을 짜주세요. 
   결과는 반드시 아래와 같은 순수 JSON 배열 형식으로만 출력하세요. (마크다운 백틱 쓰지 마세요)
   [
     { "time": "08:30", "title": "장소명", "desc": "상세한 일정 설명", "tip": "전문가의 진짜 꿀팁" }
